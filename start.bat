@@ -1,0 +1,1 @@
+cmd.exe /f:on

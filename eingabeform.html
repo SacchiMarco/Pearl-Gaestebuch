@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>G&auml;stebuchformular</title>
+    <script language = "JavaScript">
+        <!--
+        function checkForm (form){
+            if(form["eingabe"].value ==""){
+                alert ("Bitte geben Sie Ihren Namen ein!");
+                return false;
+            }
+            return true;
+        }
+        //-->
+    </script>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1>Eingabeformular:</h1>
+
+<form action="gbook.pl" method="post" onSubmit="return checkForm(this);">
+    <hr>
+    <TABLE>
+        <tr>
+            <td> Bitte geben Sie Ihren Namen ein: </td>
+            <td> <input type="text" name = "eingabe" size="50"> </td>
+        </tr>
+        <tr>
+            <td> Bitte geben Sie Ihre E-Mail-Adresse ein: </td>
+            <td> <input type="text" name="EMail" size="50"> </td>
+        </tr>
+        <tr>
+            <td> &Uuml;ber Ihren Kommentar zur <br>
+                Web-Seite und konstruktive <br>
+                Kritik bin ich dankbar: </td>
+            <td> <textarea type="text" name="kommentar"
+                           rows="8" cols="25"></textarea> </td>
+        </tr>
+    </TABLE>
+
+    <hr>
+
+    <input type="submit" value="Eintragen">
+    <input type="reset" value="L&ouml;schen">
+
+    <hr>
+    <p>
+        Klicken Sie <a href="gaestebuch.html">hier</a> um
+        die <br> bisherigen Eintr&auml;ge im G&auml;stebuch zu lesen.
+    </p>
+</form>
+</body>
+</html>
